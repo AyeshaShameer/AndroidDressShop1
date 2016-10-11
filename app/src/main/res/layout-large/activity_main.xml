@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ayesh.dressshop.MainActivity">
+
+    <TextView
+        android:text="Bridal Wear"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BridalImgBtn"
+        android:layout_alignStart="@+id/BridalImgBtn"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:paddingBottom="12dp"
+        android:paddingEnd="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:layout_toStartOf="@+id/textView3"
+        android:layout_alignEnd="@+id/BridalImgBtn" />
+
+    <TextView
+        android:text="Casual Wear"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="@android:color/black"
+        android:paddingBottom="12dp"
+        android:paddingEnd="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:layout_alignStart="@+id/CasualImgBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/BridalImgBtn" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/casual"
+        android:id="@+id/CasualImgBtn"
+        android:layout_marginEnd="28dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="72dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/bride"
+        android:id="@+id/BridalImgBtn"
+        android:contentDescription="Bridal Wear"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:scaleType="fitXY"
+        android:maxHeight="@android:dimen/notification_large_icon_height"
+        android:maxWidth="@android:dimen/notification_large_icon_width"
+        android:layout_alignTop="@+id/CasualImgBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="43dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/party"
+        android:id="@+id/PartyImgBtn"
+        android:layout_below="@+id/BridalImgBtn"
+        android:layout_alignStart="@+id/BridalImgBtn"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:id="@+id/KidImgBtn"
+        android:layout_alignTop="@+id/PartyImgBtn"
+        android:layout_alignEnd="@+id/CasualImgBtn"
+        android:layout_marginEnd="9dp" />
+
+    <TextView
+        android:text="Kurtys"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textColor="@android:color/black"
+        android:paddingEnd="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/CasualImgBtn" />
+
+    <TextView
+        android:text="Party Wear"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textColor="@android:color/black"
+        android:paddingEnd="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:layout_above="@+id/PartyImgBtn"
+        android:layout_alignStart="@+id/PartyImgBtn"
+        android:layout_below="@+id/BridalImgBtn" />
+
+    <TextView
+        android:text="TWINKLE FASHIONS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView"
+        android:fontFamily="cursive"
+        android:typeface="sans"
+        android:textSize="24sp"
+        android:lineSpacingExtra="10sp"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/KidImgBtn"
+        android:layout_marginEnd="27dp" />
+
+</RelativeLayout>
